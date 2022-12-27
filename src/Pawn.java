@@ -1,8 +1,10 @@
+import javafx.scene.image.ImageView;
+
 public class Pawn extends Piece{
     boolean isMoved = false;
 
-    Pawn(int xPosition, int yPosition, boolean color){
-        super(xPosition, yPosition, color);
+    Pawn(int xPosition, int yPosition, boolean color, ImageView button){
+        super(xPosition, yPosition, color, button);
     }
 
     public boolean checkMove(Move playerMove){

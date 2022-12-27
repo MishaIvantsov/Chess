@@ -2,329 +2,491 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.effect.ColorInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane  fx:controller="chessProjectBoard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button id="a8" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a8">
-         <effect>
-            <ColorInput height="75.0" paint="BLACK" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="b8" layoutX="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b8">
+      <Button id="d1" fx:id="d1" accessibleRole="IMAGE_VIEW" layoutX="225.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#clickedD1" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d8">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="c8" layoutX="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c8">
+      <Button id="e1" fx:id="e1" accessibleRole="IMAGE_VIEW" layoutX="300.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#clickedE1" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e8">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="d8" layoutX="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d8">
+      <Button id="f1" fx:id="f1" accessibleRole="IMAGE_VIEW" layoutX="375.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#clickedF1" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f8">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="e8" layoutX="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e8">
+      <Button id="g1" fx:id="g1" accessibleRole="IMAGE_VIEW" layoutX="450.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#clickedG1" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g8">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="f8" layoutX="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f8">
+      <Button id="h1" fx:id="h1" accessibleRole="IMAGE_VIEW" layoutX="525.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#clickedH1" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h8">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="g8" layoutX="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g8">
+      <Button id="d8" fx:id="d8" accessibleRole="IMAGE_VIEW" layoutX="225.0" mnemonicParsing="false" onMouseClicked="#clickedD8" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d7">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="h8" layoutX="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h8">
+      <Button id="e8" fx:id="e8" accessibleRole="IMAGE_VIEW" layoutX="300.0" mnemonicParsing="false" onMouseClicked="#clickedE8" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e7">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="a7" layoutY="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a7">
-         <effect>
-            <ColorInput height="75.0" paint="WHITE" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="b7" layoutX="75.0" layoutY="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b7">
+      <Button id="f8" fx:id="f8" accessibleRole="IMAGE_VIEW" layoutX="375.0" mnemonicParsing="false" onMouseClicked="#clickedF8" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f7">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="c7" layoutX="150.0" layoutY="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c7">
+      <Button id="g8" fx:id="g8" accessibleRole="IMAGE_VIEW" layoutX="450.0" mnemonicParsing="false" onMouseClicked="#clickedG8" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g7">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="d7" layoutX="225.0" layoutY="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d7">
+      <Button id="h8" fx:id="h8" accessibleRole="IMAGE_VIEW" layoutX="525.0" mnemonicParsing="false" onMouseClicked="#clickedH8" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h7">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="e7" layoutX="300.0" layoutY="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e7">
+      <Button id="d7" fx:id="d7" accessibleRole="IMAGE_VIEW" layoutX="225.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#clickedD7" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d6">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="f7" layoutX="375.0" layoutY="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f7">
+      <Button id="e7" fx:id="e7" accessibleRole="IMAGE_VIEW" layoutX="300.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#clickedE7" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e6">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="g7" layoutX="450.0" layoutY="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g7">
+      <Button id="f7" fx:id="f7" accessibleRole="IMAGE_VIEW" layoutX="375.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#clickedF7" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f6">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="h7" layoutX="525.0" layoutY="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h7">
+      <Button id="g7" fx:id="g7" accessibleRole="IMAGE_VIEW" layoutX="450.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#clickedG7" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g6">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="a6" layoutY="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a6">
-         <effect>
-            <ColorInput height="75.0" paint="BLACK" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="b6" layoutX="75.0" layoutY="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b6">
+      <Button id="h7" fx:id="h7" accessibleRole="IMAGE_VIEW" layoutX="525.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#clickedH7" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h6">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="c6" layoutX="150.0" layoutY="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c6">
-         <effect>
-            <ColorInput height="75.0" paint="BLACK" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="d6" layoutX="225.0" layoutY="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d6">
+      <Button id="a6" fx:id="a6" accessibleRole="IMAGE_VIEW" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#clickedA6" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a5">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="e6" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e6">
+      <Button id="b6" fx:id="b6" accessibleRole="IMAGE_VIEW" layoutX="75.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#clickedB6" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b5">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="f6" layoutX="375.0" layoutY="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f6">
+      <Button id="c6" fx:id="c6" accessibleRole="IMAGE_VIEW" layoutX="150.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#clickedC6" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c5">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="g6" layoutX="450.0" layoutY="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g6">
+      <Button id="d6" fx:id="d6" accessibleRole="IMAGE_VIEW" layoutX="225.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#clickedD6" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d5">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="h6" layoutX="525.0" layoutY="150.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h6">
+      <Button id="e6" fx:id="e6" accessibleRole="IMAGE_VIEW" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#clickedE6" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e5">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="a5" layoutY="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a5">
-         <effect>
-            <ColorInput height="75.0" paint="WHITE" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="b5" layoutX="75.0" layoutY="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b5">
+      <Button id="f6" fx:id="f6" accessibleRole="IMAGE_VIEW" layoutX="375.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#clickedF6" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f5">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="c5" layoutX="150.0" layoutY="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c5">
+      <Button id="g6" fx:id="g6" accessibleRole="IMAGE_VIEW" layoutX="450.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#clickedG6" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g5">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="d5" layoutX="225.0" layoutY="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d5">
+      <Button id="h6" fx:id="h6" accessibleRole="IMAGE_VIEW" layoutX="525.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#clickedH6" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h5">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="e5" layoutX="300.0" layoutY="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e5">
+      <Button id="a5" fx:id="a5" accessibleRole="IMAGE_VIEW" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#clickedA5" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a4">
+         <effect>
+            <ColorInput height="75.0" paint="BLACK" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="b5" fx:id="b5" accessibleRole="IMAGE_VIEW" layoutX="75.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#clickedB5" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b4">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="f5" layoutX="375.0" layoutY="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f5">
+      <Button id="c5" fx:id="c5" accessibleRole="IMAGE_VIEW" layoutX="150.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#clickedC5" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c4">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="g5" layoutX="450.0" layoutY="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g5">
+      <Button id="d5" fx:id="d5" accessibleRole="IMAGE_VIEW" layoutX="225.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#clickedD5" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d4">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="h5" layoutX="525.0" layoutY="225.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h5">
+      <Button id="e5" fx:id="e5" accessibleRole="IMAGE_VIEW" layoutX="300.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#clickedE5" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e4">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="a4" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a4">
-         <effect>
-            <ColorInput height="75.0" paint="BLACK" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="b4" layoutX="75.0" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b4">
+      <Button id="f5" fx:id="f5" accessibleRole="IMAGE_VIEW" layoutX="374.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#clickedF5" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f4">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="c4" layoutX="150.0" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c4">
+      <Button id="g5" fx:id="g5" accessibleRole="IMAGE_VIEW" layoutX="450.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#clickedG5" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g4">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="d4" layoutX="225.0" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d4">
+      <Button id="h5" fx:id="h5" accessibleRole="IMAGE_VIEW" layoutX="525.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#clickedH5" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h4">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="e4" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e4">
+      <Button id="a4" fx:id="a4" accessibleRole="IMAGE_VIEW" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedA4" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a3">
+         <effect>
+            <ColorInput height="75.0" paint="WHITE" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="b4" fx:id="b4" accessibleRole="IMAGE_VIEW" layoutX="75.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedB4" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b3">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="f4" layoutX="374.0" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f4">
+      <Button id="c4" fx:id="c4" accessibleRole="IMAGE_VIEW" layoutX="150.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedC4" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c3">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="g4" layoutX="450.0" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g4">
+      <Button id="d4" fx:id="d4" accessibleRole="IMAGE_VIEW" layoutX="225.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedD4" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d3">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="h4" layoutX="525.0" layoutY="300.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h4">
+      <Button id="e4" fx:id="e4" accessibleRole="IMAGE_VIEW" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedE4" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e3">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="a3" layoutY="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a3">
-         <effect>
-            <ColorInput height="75.0" paint="WHITE" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="b3" layoutX="75.0" layoutY="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b3">
+      <Button id="f4" fx:id="f4" accessibleRole="IMAGE_VIEW" layoutX="375.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedF4" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f3">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="c3" layoutX="150.0" layoutY="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c3">
+      <Button id="g4" fx:id="g4" accessibleRole="IMAGE_VIEW" layoutX="450.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedG4" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g3">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="d3" layoutX="225.0" layoutY="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d3">
+      <Button id="h4" fx:id="h4" accessibleRole="IMAGE_VIEW" layoutX="525.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#clickedH4" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h3">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="e3" layoutX="300.0" layoutY="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e3">
+      <Button id="a3" fx:id="a3" accessibleRole="IMAGE_VIEW" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#clickedA3" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a2">
+         <effect>
+            <ColorInput height="75.0" paint="BLACK" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="b3" fx:id="b3" accessibleRole="IMAGE_VIEW" layoutX="75.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#clickedB3" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b2">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="f3" layoutX="375.0" layoutY="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f3">
+      <Button id="c3" fx:id="c3" accessibleRole="IMAGE_VIEW" layoutX="150.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#clickedC3" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c2">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="g3" layoutX="450.0" layoutY="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g3">
+      <Button id="d3" fx:id="d3" accessibleRole="IMAGE_VIEW" layoutX="225.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#clickedD3" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d2">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="h3" layoutX="525.0" layoutY="375.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h3">
+      <Button id="e3" fx:id="e3" accessibleRole="IMAGE_VIEW" layoutX="300.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#clickedE3" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e2">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="a2" layoutY="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a2">
-         <effect>
-            <ColorInput height="75.0" paint="BLACK" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="b2" layoutX="75.0" layoutY="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b2">
+      <Button id="f3" fx:id="f3" accessibleRole="IMAGE_VIEW" layoutX="374.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#clickedF3" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f2">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="c2" layoutX="150.0" layoutY="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c2">
+      <Button id="g3" fx:id="g3" accessibleRole="IMAGE_VIEW" layoutX="450.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#clickedG3" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g2">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="d2" layoutX="225.0" layoutY="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d2">
+      <Button id="h3" fx:id="h3" accessibleRole="IMAGE_VIEW" layoutX="525.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#clickedH3" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h2">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="e2" layoutX="300.0" layoutY="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e2">
+      <Button id="a2" fx:id="a2" accessibleRole="IMAGE_VIEW" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#clickedA2" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a1">
+         <effect>
+            <ColorInput height="75.0" paint="WHITE" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="b2" fx:id="b2" accessibleRole="IMAGE_VIEW" layoutX="75.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#clickedB2" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b1">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="f2" layoutX="374.0" layoutY="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f2">
+      <Button id="c2" fx:id="c2" accessibleRole="IMAGE_VIEW" layoutX="150.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#clickedC2" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c1">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="g2" layoutX="450.0" layoutY="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g2">
+      <Button id="d2" fx:id="d2" accessibleRole="IMAGE_VIEW" layoutX="225.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#clickedD2" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d1">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="h2" layoutX="525.0" layoutY="450.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h2">
+      <Button id="e2" fx:id="e2" accessibleRole="IMAGE_VIEW" layoutX="300.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#clickedE2" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e1">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="a1" layoutY="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="a1">
-         <effect>
-            <ColorInput height="75.0" paint="WHITE" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="b1" layoutX="75.0" layoutY="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="b1">
+      <Button id="f2" fx:id="f2" accessibleRole="IMAGE_VIEW" layoutX="374.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#clickedF2" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f1">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="c1" layoutX="150.0" layoutY="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="c1">
+      <Button id="g2" fx:id="g2" accessibleRole="IMAGE_VIEW" layoutX="450.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#clickedG2" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g1">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="d1" layoutX="225.0" layoutY="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d1">
+      <Button id="h2" fx:id="h2" accessibleRole="IMAGE_VIEW" layoutX="525.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#clickedH2" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h1">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
-      <Button id="e1" layoutX="300.0" layoutY="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="e1">
+      <Button id="c1" fx:id="c1" accessibleRole="IMAGE_VIEW" layoutX="149.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#clickedC1" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d7">
+         <effect>
+            <ColorInput height="75.0" paint="BLACK" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="c8" fx:id="c8" accessibleRole="IMAGE_VIEW" layoutX="149.0" mnemonicParsing="false" onMouseClicked="#clickedC8" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d8">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="f1" layoutX="375.0" layoutY="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="f1">
-         <effect>
-            <ColorInput height="75.0" paint="BLACK" width="75.0" />
-         </effect>
-      </Button>
-      <Button id="g1" layoutX="450.0" layoutY="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="g1">
+      <Button id="b1" fx:id="b1" accessibleRole="IMAGE_VIEW" layoutX="75.0" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#clickedB1" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d8">
          <effect>
             <ColorInput height="75.0" paint="WHITE" width="75.0" />
          </effect>
       </Button>
-      <Button id="h1" layoutX="525.0" layoutY="525.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="h1">
+      <Button id="a8" fx:id="a8" accessibleRole="IMAGE_VIEW" mnemonicParsing="false" onMouseClicked="#clickedA8" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d8">
+         <effect>
+            <ColorInput height="75.0" paint="WHITE" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="b7" fx:id="b7" accessibleRole="IMAGE_VIEW" layoutX="75.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#clickedB7" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d8">
+         <effect>
+            <ColorInput height="75.0" paint="WHITE" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="c7" fx:id="c7" accessibleRole="IMAGE_VIEW" layoutX="150.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#clickedC7" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d7">
          <effect>
             <ColorInput height="75.0" paint="BLACK" width="75.0" />
          </effect>
       </Button>
+      <Button id="b8" fx:id="b8" accessibleRole="IMAGE_VIEW" layoutX="75.0" mnemonicParsing="false" onMouseClicked="#clickedB8" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d7">
+         <effect>
+            <ColorInput height="75.0" paint="BLACK" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="a1" fx:id="a1" accessibleRole="IMAGE_VIEW" layoutY="524.0" mnemonicParsing="false" onMouseClicked="#clickedA1" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d7">
+         <effect>
+            <ColorInput height="75.0" paint="BLACK" width="75.0" />
+         </effect>
+      </Button>
+      <Button id="a7" fx:id="a7" accessibleRole="IMAGE_VIEW" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#clickedA7" opacity="0.64" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: red;" text="d7">
+         <effect>
+            <ColorInput height="75.0" paint="BLACK" width="75.0" />
+         </effect>
+      </Button>
+      <ImageView id="Rook_h1" fx:id="RookW2" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="538.0" layoutY="532.0" onMouseClicked="#clickedRookW2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhiteRook.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Bishop_c1" fx:id="BishopW1" accessibleRole="BUTTON" fitHeight="60.0" fitWidth="75.0" layoutX="156.0" layoutY="533.0" onMouseClicked="#clickedBishopW1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhiteBishop.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Bishop_f1" fx:id="BishopW2" accessibleRole="BUTTON" fitHeight="60.0" fitWidth="75.0" layoutX="380.0" layoutY="532.0" onMouseClicked="#clickedBishopW2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhiteBishop.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Knight_g1" fx:id="KnightW2" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="63.0" layoutX="456.0" layoutY="530.0" onMouseClicked="#clickedKnightW2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhiteKnight.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Queen_d1" fx:id="QueenW" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="75.0" layoutX="228.0" layoutY="530.0" onMouseClicked="#clickedQueenW" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhiteQueen.png" />
+         </image>
+      </ImageView>
+      <ImageView id="King_e1" fx:id="KingW" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="69.0" layoutX="303.0" layoutY="529.0" onMouseClicked="#clickedKingW" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhiteKing.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_a2" fx:id="PawnW1" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="50.0" layoutX="14.0" layoutY="456.0" onMouseClicked="#clickedPawnW1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhitePawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_b2" fx:id="PawnW2" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="50.0" layoutX="88.0" layoutY="456.0" onMouseClicked="#clickedPawnW2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhitePawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_c2" fx:id="PawnW3" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="50.0" layoutX="163.0" layoutY="456.0" onMouseClicked="#clickedPawnW3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhitePawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_d2" fx:id="PawnW4" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="50.0" layoutX="238.0" layoutY="456.0" onMouseClicked="#clickedPawnW4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhitePawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_e2" fx:id="PawnW5" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="50.0" layoutX="313.0" layoutY="456.0" onMouseClicked="#clickedPawnW5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhitePawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_f2" fx:id="PawnW6" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="50.0" layoutX="387.0" layoutY="456.0" onMouseClicked="#clickedPawnW6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhitePawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_g2" fx:id="PawnW7" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="50.0" layoutX="463.0" layoutY="456.0" onMouseClicked="#clickedPawnW7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhitePawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_h2" fx:id="PawnW8" accessibleRole="BUTTON" fitHeight="64.0" fitWidth="50.0" layoutX="538.0" layoutY="456.0" onMouseClicked="#clickedPawnW8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhitePawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Rook_a8" fx:id="RookB1" accessibleRole="BUTTON" fitHeight="110.0" fitWidth="50.0" layoutX="13.0" layoutY="6.0" onMouseClicked="#clickedRookB1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackRook.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Rook_h8" fx:id="RookB2" accessibleRole="BUTTON" fitHeight="110.0" fitWidth="50.0" layoutX="538.0" layoutY="6.0" onMouseClicked="#clickedRookB2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackRook.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Bishop_c8" fx:id="BishopB1" accessibleRole="BUTTON" fitHeight="104.0" fitWidth="63.0" layoutX="156.0" layoutY="7.0" onMouseClicked="#clickedBishopB1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackBishop.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Bishop_f8" fx:id="BishopB2" accessibleRole="BUTTON" fitHeight="104.0" fitWidth="63.0" layoutX="380.0" layoutY="7.0" onMouseClicked="#clickedBishopB2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackBishop.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Knight_b8" fx:id="KnightB1" accessibleRole="BUTTON" fitHeight="84.0" fitWidth="63.0" layoutX="81.0" layoutY="6.0" onMouseClicked="#clickedKnightB1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackKnight.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Knight_g8" fx:id="KnightB2" accessibleRole="BUTTON" fitHeight="84.0" fitWidth="63.0" layoutX="456.0" layoutY="6.0" onMouseClicked="#clickedBishopB2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackKnight.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Queen_d8" fx:id="QueenB" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="69.0" layoutX="228.0" layoutY="6.0" onMouseClicked="#clickedQueenB" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackQueen.png" />
+         </image>
+      </ImageView>
+      <ImageView id="King_e8" fx:id="KingB" accessibleRole="BUTTON" fitHeight="66.0" fitWidth="75.0" layoutX="303.0" layoutY="4.0" onMouseClicked="#clickedKingB" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackKing.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_a7" fx:id="PawnB1" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="13.0" layoutY="80.0" onMouseClicked="#clickedPawnB1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackPawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_b7" fx:id="PawnB2" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="88.0" layoutY="80.0" onMouseClicked="#clickedPawnB2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackPawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_c7" fx:id="PawnB3" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="162.0" layoutY="80.0" onMouseClicked="#clickedPawnB3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackPawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_d7" fx:id="PawnB4" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="238.0" layoutY="80.0" onMouseClicked="#clickedPawnB4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackPawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_e7" fx:id="PawnB5" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="312.0" layoutY="80.0" onMouseClicked="#clickedPawnB5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackPawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_f7" fx:id="PawnB6" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="388.0" layoutY="80.0" onMouseClicked="#clickedPawnB6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackPawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_g7" fx:id="PawnB7" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="462.0" layoutY="80.0" onMouseClicked="#clickedPawnB7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackPawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Pawn_h7" fx:id="PawnB8" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="537.0" layoutY="80.0" onMouseClicked="#clickedPawnB8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/BlackPawn.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Rook_a1" fx:id="RookW1" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="50.0" layoutX="13.0" layoutY="531.0" onMouseClicked="#clickedRookW1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhiteRook.png" />
+         </image>
+      </ImageView>
+      <ImageView id="Knight_b1" fx:id="KnightW1" accessibleRole="BUTTON" fitHeight="75.0" fitWidth="63.0" layoutX="81.0" layoutY="530.0" onMouseClicked="#clickedKnightW1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Chess_Pieces.png/WhiteKnight.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

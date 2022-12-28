@@ -6,11 +6,11 @@ public class Piece {
     public static int yPos;
     public static ImageView buttoneq;
 
-    Piece(int xPosition, int yPosition, boolean color, ImageView button){
+    Piece(int xPosition, int yPosition, boolean color, ImageView imageq){
         xPos = xPosition;
         yPos = yPosition;
         isWhite = color;
-        buttoneq = button;
+        buttoneq = imageq;
     }
 
     public boolean checkMove(Move playerMove){

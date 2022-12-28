@@ -1,10 +1,12 @@
+import javafx.scene.image.ImageView;
+
 public class King extends Piece {
     
     boolean isChecked;
-    boolean isMoved;
+    boolean isAbleToCastle;
 
-    King(int xPosition, int yPosition, boolean color){
-        super(xPosition, yPosition, color);
+    King(int xPosition, int yPosition, boolean color, ImageView button){
+        super(xPosition, yPosition, color, button);
     }
 
     public boolean checkMove(Move playerMove){

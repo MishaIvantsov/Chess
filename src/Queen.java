@@ -1,7 +1,9 @@
+import javafx.scene.image.ImageView;
+
 public class Queen extends Piece {
     
-    Queen(int xPosition, int yPosition, boolean color){
-        super(xPosition, yPosition, color);
+    Queen(int xPosition, int yPosition, boolean color, ImageView button){
+        super(xPosition, yPosition, color, button);
     }
 
     public boolean checkMove(Move playerMove){

@@ -9,7 +9,6 @@ import javafx.scene.Parent;
 
 public class Main extends Application implements EventHandler<ActionEvent> {
     
-    
 
     public static void main(String[] args) throws Exception {
         launch(args);
@@ -26,6 +25,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
             primaryStage.setTitle("Chess");
             primaryStage.setScene(scene);
             primaryStage.show();
+            chessProjectBoard.makeBoards();
 
         
         } catch(Exception e){

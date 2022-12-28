@@ -8,8 +8,6 @@ import javafx.scene.input.MouseEvent;
 
 public class chessProjectBoard implements Initializable {
 
-    public Piece[][] pieceBoard = new Piece[8][8];
-
     @FXML
     private ResourceBundle resources;
 
@@ -17,388 +15,388 @@ public class chessProjectBoard implements Initializable {
     private URL location;
 
     @FXML
-    private ImageView BishopB1;
-    Piece bishopB1 = new Bishop(2, 7,false, BishopB1);
+    private static ImageView BishopB1;
+    static Piece bishopB1 = new Bishop(2, 7,false, BishopB1);
 
     @FXML
-    private ImageView BishopB2;
-    Bishop bishopB2 = new Bishop(5, 7, false, BishopB2);
+    private static ImageView BishopB2;
+    static Bishop bishopB2 = new Bishop(5, 7, false, BishopB2);
 
     @FXML
-    private ImageView BishopW1;
-    Bishop bishopW1 = new Bishop(2, 0, true, BishopW1);
+    private static ImageView BishopW1;
+    static Bishop bishopW1 = new Bishop(2, 0, true, BishopW1);
 
     @FXML
-    private ImageView BishopW2;
-    Bishop bishopW2 = new Bishop(5, 0, true, BishopW2);
+    private static ImageView BishopW2;
+    static Bishop bishopW2 = new Bishop(5, 0, true, BishopW2);
 
     @FXML
-    private ImageView KingB;
-    King kingB = new King(4, 7, false, KingB);
+    private static ImageView KingB;
+    static King kingB = new King(4, 7, false, KingB);
 
     @FXML
-    private ImageView KingW;
-    King kingW = new King(4, 0, true, KingW);
+    private static ImageView KingW;
+    static King kingW = new King(4, 0, true, KingW);
 
     @FXML
-    private ImageView KnightB1;
-    Knight knightB1 = new Knight(1, 7, false, KnightB1); 
+    private static ImageView KnightB1;
+    static Knight knightB1 = new Knight(1, 7, false, KnightB1); 
 
     @FXML
-    private ImageView KnightB2;
-    Knight knightB2 = new Knight(6, 7, false, KnightB2);
+    private static ImageView KnightB2;
+    static Knight knightB2 = new Knight(6, 7, false, KnightB2);
 
     @FXML
-    private ImageView KnightW1;
-    Knight knightW1 = new Knight(1, 0, true, KnightW1);
+    private static ImageView KnightW1;
+    static Knight knightW1 = new Knight(1, 0, true, KnightW1);
 
     @FXML
-    private ImageView KnightW2;
-    Knight knightW2 = new Knight(6, 0, true, KnightW2);
+    private static ImageView KnightW2;
+    static Knight knightW2 = new Knight(6, 0, true, KnightW2);
 
     @FXML
-    private ImageView PawnB1;
-    Pawn pawnB1 = new Pawn(0, 6, false, PawnB1);
+    private static ImageView PawnB1;
+    static Pawn pawnB1 = new Pawn(0, 6, false, PawnB1);
 
     @FXML
-    private ImageView PawnB2;
-    Pawn pawnB2 = new Pawn(1, 6, false, PawnB2);
+    private static ImageView PawnB2;
+    static Pawn pawnB2 = new Pawn(1, 6, false, PawnB2);
 
     @FXML
-    private ImageView PawnB3;
-    Pawn pawnB3 = new Pawn(2, 6, false, PawnB3);
+    private static ImageView PawnB3;
+    static Pawn pawnB3 = new Pawn(2, 6, false, PawnB3);
 
     @FXML
-    private ImageView PawnB4;
-    Pawn pawnB4 = new Pawn(3, 6, false, PawnB4);
+    private static ImageView PawnB4;
+    static Pawn pawnB4 = new Pawn(3, 6, false, PawnB4);
 
     @FXML
-    private ImageView PawnB5;
-    Pawn pawnB5 = new Pawn(4, 6, false, PawnB5);
+    private static ImageView PawnB5;
+    static Pawn pawnB5 = new Pawn(4, 6, false, PawnB5);
 
     @FXML
-    private ImageView PawnB6;
-    Pawn pawnB6 = new Pawn(5, 6, false, PawnB6);
+    private static ImageView PawnB6;
+    static Pawn pawnB6 = new Pawn(5, 6, false, PawnB6);
 
     @FXML
-    private ImageView PawnB7;
-    Pawn pawnB7 = new Pawn(6, 6, false, PawnB7);
+    private static ImageView PawnB7;
+    static Pawn pawnB7 = new Pawn(6, 6, false, PawnB7);
 
     @FXML
-    private ImageView PawnB8;
-    Pawn pawnB8 = new Pawn(7, 6, false, PawnB8);
+    private static ImageView PawnB8;
+    static Pawn pawnB8 = new Pawn(7, 6, false, PawnB8);
 
     @FXML
-    private ImageView PawnW1;
-    Pawn pawnW1 = new Pawn(0, 1, true, PawnW1);
+    private static ImageView PawnW1;
+    static Pawn pawnW1 = new Pawn(0, 1, true, PawnW1);
 
     @FXML
-    private ImageView PawnW2;
-    Pawn pawnW2 = new Pawn(1, 1, true, PawnW2);
+    private static ImageView PawnW2;
+    static Pawn pawnW2 = new Pawn(1, 1, true, PawnW2);
 
     @FXML
-    private ImageView PawnW3;
-    Pawn pawnW3 = new Pawn(2, 1, true, PawnW3);
+    private static ImageView PawnW3;
+    static Pawn pawnW3 = new Pawn(2, 1, true, PawnW3);
 
     @FXML
-    private ImageView PawnW4;
-    Pawn pawnW4 = new Pawn(3, 1, true, PawnW4);
+    private static ImageView PawnW4;
+    static Pawn pawnW4 = new Pawn(3, 1, true, PawnW4);
 
     @FXML
-    private ImageView PawnW5;
-    Pawn pawnW5 = new Pawn(4, 1, true, PawnW5);
+    private static ImageView PawnW5;
+    static Pawn pawnW5 = new Pawn(4, 1, true, PawnW5);
 
     @FXML
-    private ImageView PawnW6;
-    Pawn pawnW6 = new Pawn(5, 1, true, PawnW6);
+    private static ImageView PawnW6;
+    static Pawn pawnW6 = new Pawn(5, 1, true, PawnW6);
 
     @FXML
-    private ImageView PawnW7;
-    Pawn pawnW7 = new Pawn(6, 1, true, PawnW7);
+    private static ImageView PawnW7;
+    static Pawn pawnW7 = new Pawn(6, 1, true, PawnW7);
 
     @FXML
-    private ImageView PawnW8;
-    Pawn pawnW8 = new Pawn(7, 1, true, PawnW8);
+    private static ImageView PawnW8;
+    static Pawn pawnW8 = new Pawn(7, 1, true, PawnW8);
 
     @FXML
-    private ImageView QueenB;
-    Queen queenB = new Queen(3, 7, false, QueenB);
+    private static ImageView QueenB;
+    static Queen queenB = new Queen(3, 7, false, QueenB);
 
     @FXML
-    private ImageView QueenW;
-    Queen queenW = new Queen(3, 0, true, QueenW);
+    static private ImageView QueenW;
+    static Queen queenW = new Queen(3, 0, true, QueenW);
 
     @FXML
-    private ImageView RookB1;
-    Rook rookB1 = new Rook(0, 7, false, RookB1);
+    private static ImageView RookB1;
+    static Rook rookB1 = new Rook(0, 7, false, RookB1);
 
     @FXML
-    private ImageView RookB2;
-    Rook rookB2 = new Rook(7, 7, false, RookB2);
+    private static ImageView RookB2;
+    static Rook rookB2 = new Rook(7, 7, false, RookB2);
 
     @FXML
-    private ImageView RookW1;
-    Rook rookW1 = new Rook(0, 0, true, RookW1);
+    private static ImageView RookW1;
+    static Rook rookW1 = new Rook(0, 0, true, RookW1);
 
     @FXML
-    private ImageView RookW2;
-    Rook rookW2 = new Rook(7, 0, true, RookW2);
+    private static ImageView RookW2;
+    static Rook rookW2 = new Rook(7, 0, true, RookW2);
 
     @FXML
-    private Button a1;
-    Tile A1 = new Tile(0, 0, a1);
+    private static Button a1;
+    static Tile A1 = new Tile(0, 0, a1);
 
     @FXML
-    private Button a2;
-    Tile A2 = new Tile(0, 1, a2);
+    private static Button a2;
+    static Tile A2 = new Tile(0, 1, a2);
 
     @FXML
-    private Button a3;
-    Tile A3 = new Tile(0, 2, a3);
+    private static Button a3;
+    static Tile A3 = new Tile(0, 2, a3);
 
     @FXML
-    private Button a4;
-    Tile A4 = new Tile(0, 3, a4);
+    private static Button a4;
+    static Tile A4 = new Tile(0, 3, a4);
 
     @FXML
-    private Button a5;
-    Tile A5 = new Tile(0, 4, a5);
+    private static Button a5;
+    static Tile A5 = new Tile(0, 4, a5);
 
     @FXML
-    private Button a6;
-    Tile A6 = new Tile(0, 5, a6);
+    private static Button a6;
+    static Tile A6 = new Tile(0, 5, a6);
 
     @FXML
-    private Button a7;
-    Tile A7 = new Tile(0, 6, a7);
+    private static Button a7;
+    static Tile A7 = new Tile(0, 6, a7);
 
     @FXML
-    private Button a8;
-    Tile A8 = new Tile(0, 7, a8);
+    private static Button a8;
+    static Tile A8 = new Tile(0, 7, a8);
 
     @FXML
-    private Button b1;
-    Tile B1 = new Tile(1, 0, b1);
+    private static Button b1;
+    static Tile B1 = new Tile(1, 0, b1);
 
     @FXML
-    private Button b2;
-    Tile B2 = new Tile(1, 1, b2);
+    private static Button b2;
+    static Tile B2 = new Tile(1, 1, b2);
 
     @FXML
-    private Button b3;
-    Tile B3 = new Tile(1, 2, b3);
+    private static Button b3;
+    static Tile B3 = new Tile(1, 2, b3);
 
     @FXML
-    private Button b4;
-    Tile B4 = new Tile(1, 3, b4);
+    private static Button b4;
+    static Tile B4 = new Tile(1, 3, b4);
 
     @FXML
-    private Button b5;
-    Tile B5 = new Tile(1, 4, b5);
+    private static Button b5;
+    static Tile B5 = new Tile(1, 4, b5);
 
     @FXML
-    private Button b6;
-    Tile B6 = new Tile(1, 5, b6);
+    private static Button b6;
+    static Tile B6 = new Tile(1, 5, b6);
 
     @FXML
-    private Button b7;
-    Tile B7 = new Tile(1, 6, b7);
+    private static Button b7;
+    static Tile B7 = new Tile(1, 6, b7);
 
     @FXML
-    private Button b8;
-    Tile B8 = new Tile(1, 7, b8);
+    private static Button b8;
+    static Tile B8 = new Tile(1, 7, b8);
 
     @FXML
-    private Button c1;
-    Tile C1 = new Tile(2, 0, c1);
+    private static Button c1;
+    static Tile C1 = new Tile(2, 0, c1);
 
     @FXML
-    private Button c2;
-    Tile C2 = new Tile(2, 1, c2);
+    private static Button c2;
+    static Tile C2 = new Tile(2, 1, c2);
 
     @FXML
-    private Button c3;
-    Tile C3 = new Tile(2, 2, c3);
+    private static Button c3;
+    static Tile C3 = new Tile(2, 2, c3);
 
     @FXML
-    private Button c4;
-    Tile C4 = new Tile(2, 3, c4);
+    private static Button c4;
+    static Tile C4 = new Tile(2, 3, c4);
 
     @FXML
-    private Button c5;
-    Tile C5 = new Tile(2, 4, c5);
+    private static Button c5;
+    static Tile C5 = new Tile(2, 4, c5);
 
     @FXML
-    private Button c6;
-    Tile C6 = new Tile(2, 5, c6);
+    private static Button c6;
+    static Tile C6 = new Tile(2, 5, c6);
 
     @FXML
-    private Button c7;
-    Tile C7 = new Tile(2, 6, c7);
+    private static Button c7;
+    static Tile C7 = new Tile(2, 6, c7);
 
     @FXML
-    private Button c8;
-    Tile C8 = new Tile(2, 7, c8);
+    private static Button c8;
+    static Tile C8 = new Tile(2, 7, c8);
 
     @FXML
-    private Button d1;
-    Tile D1 = new Tile(3, 0, d1);
+    private static Button d1;
+    static Tile D1 = new Tile(3, 0, d1);
 
     @FXML
-    private Button d2;
-    Tile D2 = new Tile(3, 1, d2);
+    private static Button d2;
+    static Tile D2 = new Tile(3, 1, d2);
 
     @FXML
-    private Button d3;
-    Tile D3 = new Tile(3, 2, d3);
+    private static Button d3;
+    static Tile D3 = new Tile(3, 2, d3);
 
     @FXML
-    private Button d4;
-    Tile D4 = new Tile(3, 3, d4);
+    private static Button d4;
+    static Tile D4 = new Tile(3, 3, d4);
 
     @FXML
-    private Button d5;
-    Tile D5 = new Tile(3, 4, d5);
+    private static Button d5;
+    static Tile D5 = new Tile(3, 4, d5);
 
     @FXML
-    private Button d6;
-    Tile D6 = new Tile(3, 5, d6);
+    private static Button d6;
+    static Tile D6 = new Tile(3, 5, d6);
 
     @FXML
-    private Button d7;
-    Tile D7 = new Tile(3, 6, d7);
+    private static Button d7;
+    static Tile D7 = new Tile(3, 6, d7);
 
     @FXML
-    private Button d8;
-    Tile D8 = new Tile(3, 7, d8);
+    private static Button d8;
+    static Tile D8 = new Tile(3, 7, d8);
 
     @FXML
-    private Button e1;
-    Tile E1 = new Tile(4, 0, e1);
+    private static Button e1;
+    static Tile E1 = new Tile(4, 0, e1);
 
     @FXML
-    private Button e2;
-    Tile E2 = new Tile(4, 1, e2);
+    private static Button e2;
+    static Tile E2 = new Tile(4, 1, e2);
 
     @FXML
-    private Button e3;
-    Tile E3 = new Tile(4, 2, e3);
+    private static Button e3;
+    static Tile E3 = new Tile(4, 2, e3);
 
     @FXML
-    private Button e4;
-    Tile E4 = new Tile(4, 3, e4);
+    private static Button e4;
+    static Tile E4 = new Tile(4, 3, e4);
 
     @FXML
-    private Button e5;
-    Tile E5 = new Tile(4, 4, e5);
+    private static Button e5;
+    static Tile E5 = new Tile(4, 4, e5);
 
     @FXML
-    private Button e6;
-    Tile E6 = new Tile(4, 5, e6);
+    private static Button e6;
+    static Tile E6 = new Tile(4, 5, e6);
 
     @FXML
-    private Button e7;
-    Tile E7 = new Tile(4, 6, e7);
+    private static Button e7;
+    static Tile E7 = new Tile(4, 6, e7);
 
     @FXML
-    private Button e8;
-    Tile E8 = new Tile(4, 7, e8);
+    private static Button e8;
+    static Tile E8 = new Tile(4, 7, e8);
 
     @FXML
-    private Button f1;
-    Tile F1 = new Tile(5, 0, f1);
+    private static Button f1;
+    static Tile F1 = new Tile(5, 0, f1);
 
     @FXML
-    private Button f2;
-    Tile F2 = new Tile(5, 1, f2);
+    private static Button f2;
+    static Tile F2 = new Tile(5, 1, f2);
 
     @FXML
-    private Button f3;
-    Tile F3 = new Tile(5, 2, f3);
+    private static Button f3;
+    static Tile F3 = new Tile(5, 2, f3);
 
     @FXML
-    private Button f4;
-    Tile F4 = new Tile(5, 3, f4);
+    private static Button f4;
+    static Tile F4 = new Tile(5, 3, f4);
 
     @FXML
-    private Button f5;
-    Tile F5 = new Tile(5, 4, f5);
+    private static Button f5;
+    static Tile F5 = new Tile(5, 4, f5);
 
     @FXML
-    private Button f6;
-    Tile F6 = new Tile(5, 5, f6);
+    private static Button f6;
+    static Tile F6 = new Tile(5, 5, f6);
 
     @FXML
-    private Button f7;
-    Tile F7 = new Tile(5, 6, f7);
+    private static Button f7;
+    static Tile F7 = new Tile(5, 6, f7);
 
     @FXML
-    private Button f8;
-    Tile F8 = new Tile(5, 7, f8);
+    private static Button f8;
+    static Tile F8 = new Tile(5, 7, f8);
 
     @FXML
-    private Button g1;
-    Tile G1 = new Tile(6, 0, g1);
+    private static Button g1;
+    static Tile G1 = new Tile(6, 0, g1);
 
     @FXML
-    private Button g2;
-    Tile G2 = new Tile(6, 1, g2);
+    private static Button g2;
+    static Tile G2 = new Tile(6, 1, g2);
 
     @FXML
-    private Button g3;
-    Tile G3 = new Tile(6, 2, g3);
+    private static Button g3;
+    static Tile G3 = new Tile(6, 2, g3);
 
     @FXML
-    private Button g4;
-    Tile G4 = new Tile(6, 3, g4);
+    private static Button g4;
+    static Tile G4 = new Tile(6, 3, g4);
 
     @FXML
-    private Button g5;
-    Tile G5 = new Tile(6, 4, g5);
+    private static Button g5;
+    static Tile G5 = new Tile(6, 4, g5);
 
     @FXML
-    private Button g6;
-    Tile G6 = new Tile(6, 5, g6);
+    private static Button g6;
+    static Tile G6 = new Tile(6, 5, g6);
 
     @FXML
-    private Button g7;
-    Tile G7 = new Tile(6, 6, g7);
+    private static Button g7;
+    static Tile G7 = new Tile(6, 6, g7);
 
     @FXML
-    private Button g8;
-    Tile G8 = new Tile(6, 7, g8);
+    private static Button g8;
+    static Tile G8 = new Tile(6, 7, g8);
 
     @FXML
-    private Button h1;
-    Tile H1 = new Tile(7, 0, h1);
+    private static Button h1;
+    static Tile H1 = new Tile(7, 0, h1);
 
     @FXML
-    private Button h2;
-    Tile H2 = new Tile(7, 1, h2);
+    private static Button h2;
+    static Tile H2 = new Tile(7, 1, h2);
 
     @FXML
-    private Button h3;
-    Tile H3 = new Tile(7, 2, h3);
+    private static Button h3;
+    static Tile H3 = new Tile(7, 2, h3);
 
     @FXML
-    private Button h4;
-    Tile H4 = new Tile(7, 3, h4);
+    private static Button h4;
+    static Tile H4 = new Tile(7, 3, h4);
 
     @FXML
-    private Button h5;
-    Tile H5 = new Tile(7, 4, h5);
+    private static Button h5;
+    static Tile H5 = new Tile(7, 4, h5);
 
     @FXML
-    private Button h6;
-    Tile H6 = new Tile(7, 5, h6);
+    private static Button h6;
+    static Tile H6 = new Tile(7, 5, h6);
 
     @FXML
-    private Button h7;
-    Tile H7 = new Tile(7, 6, h7);
+    private static Button h7;
+    static Tile H7 = new Tile(7, 6, h7);
 
     @FXML
-    private Button h8;
-    Tile H8 = new Tile(7, 7, h8);
+    private static Button h8;
+    static Tile H8 = new Tile(7, 7, h8);
 
     @FXML
     void clickedA1(MouseEvent event) {
@@ -874,9 +872,12 @@ public class chessProjectBoard implements Initializable {
     void clickedRookW2(MouseEvent event) {
 
     }
+    
+    public static Piece[][] pieceBoard = new Piece[8][8];
+    public static Tile[][] tileBoard = new Tile[8][8];
 
-    void makeBoards(){
-        
+    public static void makeBoards(){
+            
         //white piece row
         pieceBoard[0][0] = rookW1;
         pieceBoard[1][0] = knightW1;
@@ -896,6 +897,92 @@ public class chessProjectBoard implements Initializable {
         pieceBoard[5][1] = pawnW6;
         pieceBoard[6][1] = pawnW7;
         pieceBoard[7][1] = pawnW8;
+
+        //black pawn row
+        pieceBoard[0][6] = pawnB1;
+        pieceBoard[1][6] = pawnB2;
+        pieceBoard[2][6] = pawnB3;
+        pieceBoard[3][6] = pawnB4;
+        pieceBoard[4][6] = pawnB5;
+        pieceBoard[5][6] = pawnB6;
+        pieceBoard[6][6] = pawnB7;
+        pieceBoard[7][6] = pawnB8;
+
+        //black piece row
+        pieceBoard[0][7] = rookB1;
+        pieceBoard[1][7] = knightB1;
+        pieceBoard[2][7] = bishopB1;
+        pieceBoard[3][7] = queenB;
+        pieceBoard[4][7] = kingB;
+        pieceBoard[5][7] = bishopB2;
+        pieceBoard[6][7] = knightB2;
+        pieceBoard[7][7] = rookB2;
+
+        //tile board
+        tileBoard[0][0] = A1;
+        tileBoard[0][1] = A2;
+        tileBoard[0][2] = A3;
+        tileBoard[0][3] = A4;
+        tileBoard[0][4] = A5;
+        tileBoard[0][5] = A6;
+        tileBoard[0][6] = A7;
+        tileBoard[0][7] = A8;
+        tileBoard[1][0] = B1;
+        tileBoard[1][1] = B2;
+        tileBoard[1][2] = B3;
+        tileBoard[1][3] = B4;
+        tileBoard[1][4] = B5;
+        tileBoard[1][5] = B6;
+        tileBoard[1][6] = B7;
+        tileBoard[1][7] = B8;
+        tileBoard[2][0] = C1;
+        tileBoard[2][1] = C2;
+        tileBoard[2][2] = C3;
+        tileBoard[2][3] = C4;
+        tileBoard[2][4] = C5;
+        tileBoard[2][5] = C6;
+        tileBoard[2][6] = C7;
+        tileBoard[2][7] = C8;
+        tileBoard[3][0] = D1;
+        tileBoard[3][1] = D2;
+        tileBoard[3][2] = D3;
+        tileBoard[3][3] = D4;
+        tileBoard[3][4] = D5;
+        tileBoard[3][5] = D6;
+        tileBoard[3][6] = D7;
+        tileBoard[3][7] = D8;
+        tileBoard[4][0] = E1;
+        tileBoard[4][1] = E2;
+        tileBoard[4][2] = E3;
+        tileBoard[4][3] = E4;
+        tileBoard[4][4] = E5;
+        tileBoard[4][5] = E6;
+        tileBoard[4][6] = E7;
+        tileBoard[4][7] = E8;
+        tileBoard[5][0] = F1;
+        tileBoard[5][1] = F2;
+        tileBoard[5][2] = F3;
+        tileBoard[5][3] = F4;
+        tileBoard[5][4] = F5;
+        tileBoard[5][5] = F6;
+        tileBoard[5][6] = F7;
+        tileBoard[5][7] = F8;
+        tileBoard[6][0] = G1;
+        tileBoard[6][1] = G2;
+        tileBoard[6][2] = G3;
+        tileBoard[6][3] = G4;
+        tileBoard[6][4] = G5;
+        tileBoard[6][5] = G6;
+        tileBoard[6][6] = G7;
+        tileBoard[6][7] = G8;
+        tileBoard[7][0] = H1;
+        tileBoard[7][1] = H2;
+        tileBoard[7][2] = H3;
+        tileBoard[7][3] = H4;
+        tileBoard[7][4] = H5;
+        tileBoard[7][5] = H6;
+        tileBoard[7][6] = H7;
+        tileBoard[7][7] = H8;
     }
 
     @FXML

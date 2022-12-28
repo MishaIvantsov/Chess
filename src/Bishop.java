@@ -3,8 +3,8 @@ import javafx.scene.image.ImageView;
 
 public class Bishop extends Piece {
     
-    Bishop(int xPosition, int yPosition, boolean color, ImageView button){
-        super(xPosition, yPosition, color, button);
+    Bishop(int xPosition, int yPosition, boolean color, ImageView imageq){
+        super(xPosition, yPosition, color, imageq);
     }
 
     public boolean checkMove(Move playerMove){

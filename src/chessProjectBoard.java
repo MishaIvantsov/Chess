@@ -400,82 +400,82 @@ public class chessProjectBoard implements Initializable {
 
     @FXML
     void clickedA1(MouseEvent event) {
-
+        Main.clickPosFunc(0, 0);
     }
 
     @FXML
     void clickedA2(MouseEvent event) {
-
+        Main.clickPosFunc(0, 1);
     }
 
     @FXML
     void clickedA3(MouseEvent event) {
-
+        Main.clickPosFunc(0, 2);
     }
 
     @FXML
     void clickedA4(MouseEvent event) {
-
+        Main.clickPosFunc(0, 3);
     }
 
     @FXML
     void clickedA5(MouseEvent event) {
-
+        Main.clickPosFunc(0, 4);
     }
 
     @FXML
     void clickedA6(MouseEvent event) {
-
+        Main.clickPosFunc(0, 5);
     }
 
     @FXML
     void clickedA7(MouseEvent event) {
-
+        Main.clickPosFunc(0, 6);
     }
 
     @FXML
     void clickedA8(MouseEvent event) {
-
+        Main.clickPosFunc(0, 7);
     }
 
     @FXML
     void clickedB1(MouseEvent event) {
-
+        Main.clickPosFunc(1, 0);
     }
 
     @FXML
     void clickedB2(MouseEvent event) {
-
+        Main.clickPosFunc(1, 1);
     }
 
     @FXML
     void clickedB3(MouseEvent event) {
-
+        Main.clickPosFunc(1, 2);
     }
 
     @FXML
     void clickedB4(MouseEvent event) {
-
+        Main.clickPosFunc(1, 3);
     }
 
     @FXML
     void clickedB5(MouseEvent event) {
-
+        Main.clickPosFunc(1, 4);
     }
 
     @FXML
     void clickedB6(MouseEvent event) {
-
+        Main.clickPosFunc(1, 5);
     }
 
     @FXML
     void clickedB7(MouseEvent event) {
-
+        Main.clickPosFunc(1, 6);
     }
 
     @FXML
     void clickedB8(MouseEvent event) {
-
+        Main.clickPosFunc(1, 7);
     }
 
     @FXML
@@ -500,242 +500,242 @@ public class chessProjectBoard implements Initializable {
 
     @FXML
     void clickedC1(MouseEvent event) {
-
+        Main.clickPosFunc(2, 0);
     }
 
     @FXML
     void clickedC2(MouseEvent event) {
-
+        Main.clickPosFunc(2, 1);
     }
 
     @FXML
     void clickedC3(MouseEvent event) {
-
+        Main.clickPosFunc(2, 2);
     }
 
     @FXML
     void clickedC4(MouseEvent event) {
-
+        Main.clickPosFunc(2, 3);
     }
 
     @FXML
     void clickedC5(MouseEvent event) {
-
+        Main.clickPosFunc(2, 4);
     }
 
     @FXML
     void clickedC6(MouseEvent event) {
-
+        Main.clickPosFunc(2, 5);
     }
 
     @FXML
     void clickedC7(MouseEvent event) {
-
+        Main.clickPosFunc(2, 6);
     }
 
     @FXML
     void clickedC8(MouseEvent event) {
-
+        Main.clickPosFunc(2, 7);
     }
 
     @FXML
     void clickedD1(MouseEvent event) {
-
+        Main.clickPosFunc(3, 0);
     }
 
     @FXML
     void clickedD2(MouseEvent event) {
-
+        Main.clickPosFunc(3, 1);
     }
 
     @FXML
     void clickedD3(MouseEvent event) {
-
+        Main.clickPosFunc(3, 2);
     }
 
     @FXML
     void clickedD4(MouseEvent event) {
-
+        Main.clickPosFunc(3, 3);
     }
 
     @FXML
     void clickedD5(MouseEvent event) {
-
+        Main.clickPosFunc(3, 4);
     }
 
     @FXML
     void clickedD6(MouseEvent event) {
-
+        Main.clickPosFunc(3, 5);
     }
 
     @FXML
     void clickedD7(MouseEvent event) {
-
+        Main.clickPosFunc(3, 6);
     }
 
     @FXML
     void clickedD8(MouseEvent event) {
-
+        Main.clickPosFunc(3, 7);
     }
 
     @FXML
     void clickedE1(MouseEvent event) {
-
+        Main.clickPosFunc(4, 0);
     }
 
     @FXML
     void clickedE2(MouseEvent event) {
-
+        Main.clickPosFunc(4, 1);
     }
 
     @FXML
     void clickedE3(MouseEvent event) {
-
+        Main.clickPosFunc(4, 2);
     }
 
     @FXML
     void clickedE4(MouseEvent event) {
-
+        Main.clickPosFunc(4, 3);
     }
 
     @FXML
     void clickedE5(MouseEvent event) {
-
+        Main.clickPosFunc(4, 4);
     }
 
     @FXML
     void clickedE6(MouseEvent event) {
-
+        Main.clickPosFunc(4, 5);
     }
 
     @FXML
     void clickedE7(MouseEvent event) {
-
+        Main.clickPosFunc(4, 6);
     }
 
     @FXML
     void clickedE8(MouseEvent event) {
-
+        Main.clickPosFunc(4, 7);
     }
 
     @FXML
     void clickedF1(MouseEvent event) {
-
+        Main.clickPosFunc(5, 0);
     }
 
     @FXML
     void clickedF2(MouseEvent event) {
-
+        Main.clickPosFunc(5, 1);
     }
 
     @FXML
     void clickedF3(MouseEvent event) {
-
+        Main.clickPosFunc(5, 2);
     }
 
     @FXML
     void clickedF4(MouseEvent event) {
-
+        Main.clickPosFunc(5, 3);
     }
 
     @FXML
     void clickedF5(MouseEvent event) {
-
+        Main.clickPosFunc(5, 4);
     }
 
     @FXML
     void clickedF6(MouseEvent event) {
-
+        Main.clickPosFunc(5, 5);
     }
 
     @FXML
     void clickedF7(MouseEvent event) {
-
+        Main.clickPosFunc(5, 6);
     }
 
     @FXML
     void clickedF8(MouseEvent event) {
-
+        Main.clickPosFunc(5, 7);
     }
 
     @FXML
     void clickedG1(MouseEvent event) {
-
+        Main.clickPosFunc(6, 0);
     }
 
     @FXML
     void clickedG2(MouseEvent event) {
-
+        Main.clickPosFunc(6, 1);
     }
 
     @FXML
     void clickedG3(MouseEvent event) {
-
+        Main.clickPosFunc(6, 2);
     }
 
     @FXML
     void clickedG4(MouseEvent event) {
-
+        Main.clickPosFunc(6, 3);
     }
 
     @FXML
     void clickedG5(MouseEvent event) {
-
+        Main.clickPosFunc(6, 4);
     }
 
     @FXML
     void clickedG6(MouseEvent event) {
-
+        Main.clickPosFunc(6, 5);
     }
 
     @FXML
     void clickedG7(MouseEvent event) {
-
+        Main.clickPosFunc(6, 6);
     }
 
     @FXML
     void clickedG8(MouseEvent event) {
-
+        Main.clickPosFunc(6, 7);
     }
 
     @FXML
     void clickedH1(MouseEvent event) {
-
+        Main.clickPosFunc(7, 0);
     }
 
     @FXML
     void clickedH2(MouseEvent event) {
-
+        Main.clickPosFunc(7, 1);
     }
 
     @FXML
     void clickedH3(MouseEvent event) {
-
+        Main.clickPosFunc(7, 2);
     }
 
     @FXML
     void clickedH4(MouseEvent event) {
-
+        Main.clickPosFunc(7, 3);
     }
 
     @FXML
     void clickedH5(MouseEvent event) {
-
+        Main.clickPosFunc(7, 4);
     }
 
     @FXML
     void clickedH6(MouseEvent event) {
-
+        Main.clickPosFunc(7, 5);
     }
 
     @FXML
     void clickedH7(MouseEvent event) {
-
+        Main.clickPosFunc(7, 6);
     }
 
     @FXML
     void clickedH8(MouseEvent event) {
-
+        Main.clickPosFunc(7, 7);
     }
 
     @FXML

@@ -14,6 +14,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     public static Piece selectedPiece;
     public static Tile selectedTile;
     public static Move playerMove;
+    public static boolean isWhiteTurn = true;
 
     public static void main(String[] args) throws Exception {
         launch(args);
@@ -44,14 +45,14 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     }
 
 
-    public static void clickPosFunc(int x, int y){
+    public static void clickPosFunc(Tile tile){
 
         if(isEvenClick){
 
-            playerMove.xChange = x - selectedPiece.xPos;
-            playerMove.yChange = y - selectedPiece.yPos;
+            playerMove.xChange = tile.xPos - selectedPiece.xPos;
+            playerMove.yChange = tile.yPos - selectedPiece.yPos;
 
-            if(chessProjectBoard.pieceBoard[x][y] != null){
+            if(chessProjectBoard.pieceBoard[tile.xPos][tile.yPos] != null){
                 playerMove.isCapture = true;
             }
             else{
@@ -62,16 +63,34 @@ public class Main extends Application implements EventHandler<ActionEvent> {
 
             if(isValidMove){
 
-                chessProjectBoard.pieceBoard[x][y] = selectedPiece;
+                if(playerMove.isCapture){
+                    chessProjectBoard.pieceBoard[tile.xPos][tile.yPos].buttoneq.setVisible(false);
+                    chessProjectBoard.pieceBoard[tile.xPos][tile.yPos].buttoneq.setManaged(false);
+                }
+
+                chessProjectBoard.pieceBoard[tile.xPos][tile.yPos] = selectedPiece;
                 chessProjectBoard.pieceBoard[selectedPiece.xPos][selectedPiece.yPos] = null;
-                selectedPiece.xPos = x;
-                selectedPiece.yPos = y;
+                selectedPiece.xPos = tile.xPos;
+                selectedPiece.yPos = tile.yPos;
 
                 selectedPiece.buttoneq.setTranslateX(75 * playerMove.xChange);
                 selectedPiece.buttoneq.setTranslateX(75 * playerMove.xChange);
+
+                isWhiteTurn = ! isWhiteTurn;
             }
         }
         
         isEvenClick = false;
+    }
+
+    public static void clickPiece(Piece piece){
+        
+        if(isWhiteTurn == piece.isWhite && isEvenClick == false){
+            selectedPiece = piece;
+            isEvenClick = true;
+        }
+        else if(isEvenClick = true && isWhiteTurn != piece.isWhite){
+            clickPosFunc(chessProjectBoard.tileBoard[piece.xPos][piece.yPos]);
+        }
     }
 }

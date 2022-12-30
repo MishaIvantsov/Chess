@@ -6,6 +6,7 @@ public class Rook extends Piece {
         super(xPosition, yPosition, color, button);
     }
 
+    @Override
     public boolean checkMove(Move playerMove){
         
         if(playerMove.xChange == 0 || playerMove.yChange == 0 && !(playerMove.xChange == 0 && playerMove.yChange == 0)){

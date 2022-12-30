@@ -9,6 +9,7 @@ public class King extends Piece {
         super(xPosition, yPosition, color, button);
     }
 
+    @Override
     public boolean checkMove(Move playerMove){
         
         if( (playerMove.xChange == 1 || playerMove.xChange == 0) && (playerMove.yChange == 1 || playerMove.yChange == 0) ){

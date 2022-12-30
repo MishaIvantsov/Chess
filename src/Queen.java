@@ -6,6 +6,7 @@ public class Queen extends Piece {
         super(xPosition, yPosition, color, button);
     }
 
+    @Override
     public boolean checkMove(Move playerMove){
         
         if(playerMove.xChange == playerMove.yChange || playerMove.xChange == - playerMove.xChange || playerMove.xChange == 0 || playerMove.yChange == 0){

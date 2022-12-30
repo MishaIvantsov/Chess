@@ -2,18 +2,21 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
-//import javafx.scene.control.Button;
+import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
 public class Main extends Application implements EventHandler<ActionEvent> {
-    
+
+    static ImageView imageV = new ImageView();
+    static Button button = new Button();
     public static boolean isEvenClick = false;
     public static boolean isValidMove = false;
-    public static Piece selectedPiece;
-    public static Tile selectedTile;
-    public static Move playerMove;
+    public static Piece selectedPiece = new Piece(-1, -1, false, imageV );
+    public static Tile selectedTile = new Tile(0, 0, button);
+    public static Move playerMove = new Move(0, 0, false);
     public static boolean isWhiteTurn = true;
 
     public static void main(String[] args) throws Exception {
@@ -23,6 +26,8 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     @Override
     public void start(Stage primaryStage) throws Exception {
         
+
+
         try{
             
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("chessProjectBoard.fxml"));
@@ -64,6 +69,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
             if(isValidMove){
 
                 if(playerMove.isCapture){
+        
                     chessProjectBoard.pieceBoard[tile.xPos][tile.yPos].buttoneq.setVisible(false);
                     chessProjectBoard.pieceBoard[tile.xPos][tile.yPos].buttoneq.setManaged(false);
                 }
@@ -74,7 +80,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
                 selectedPiece.yPos = tile.yPos;
 
                 selectedPiece.buttoneq.setTranslateX(75 * playerMove.xChange);
-                selectedPiece.buttoneq.setTranslateX(75 * playerMove.xChange);
+                selectedPiece.buttoneq.setTranslateY(75 * playerMove.yChange);
 
                 isWhiteTurn = ! isWhiteTurn;
             }
@@ -84,7 +90,7 @@ public class Main extends Application implements EventHandler<ActionEvent> {
     }
 
     public static void clickPiece(Piece piece){
-        
+
         if(isWhiteTurn == piece.isWhite && isEvenClick == false){
             selectedPiece = piece;
             isEvenClick = true;

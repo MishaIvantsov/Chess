@@ -15,387 +15,387 @@ public class chessProjectBoard implements Initializable {
     private URL location;
 
     @FXML
-    private static ImageView BishopB1;
+    private static ImageView BishopB1 = new ImageView();
     static Piece bishopB1 = new Bishop(2, 7,false, BishopB1);
 
     @FXML
-    private static ImageView BishopB2;
+    private static ImageView BishopB2 = new ImageView();
     static Bishop bishopB2 = new Bishop(5, 7, false, BishopB2);
 
     @FXML
-    private static ImageView BishopW1;
+    private static ImageView BishopW1 = new ImageView();
     static Bishop bishopW1 = new Bishop(2, 0, true, BishopW1);
 
     @FXML
-    private static ImageView BishopW2;
+    private static ImageView BishopW2 = new ImageView();
     static Bishop bishopW2 = new Bishop(5, 0, true, BishopW2);
 
     @FXML
-    private static ImageView KingB;
+    private static ImageView KingB = new ImageView();
     static King kingB = new King(4, 7, false, KingB);
 
     @FXML
-    private static ImageView KingW;
+    private static ImageView KingW = new ImageView();
     static King kingW = new King(4, 0, true, KingW);
 
     @FXML
-    private static ImageView KnightB1;
+    private static ImageView KnightB1 = new ImageView();
     static Knight knightB1 = new Knight(1, 7, false, KnightB1); 
 
     @FXML
-    private static ImageView KnightB2;
+    private static ImageView KnightB2 = new ImageView();
     static Knight knightB2 = new Knight(6, 7, false, KnightB2);
 
     @FXML
-    private static ImageView KnightW1;
+    private static ImageView KnightW1 = new ImageView();
     static Knight knightW1 = new Knight(1, 0, true, KnightW1);
 
     @FXML
-    private static ImageView KnightW2;
+    private static ImageView KnightW2 = new ImageView();
     static Knight knightW2 = new Knight(6, 0, true, KnightW2);
 
     @FXML
-    private static ImageView PawnB1;
+    private static ImageView PawnB1 = new ImageView();
     static Pawn pawnB1 = new Pawn(0, 6, false, PawnB1);
 
     @FXML
-    private static ImageView PawnB2;
+    private static ImageView PawnB2 = new ImageView();
     static Pawn pawnB2 = new Pawn(1, 6, false, PawnB2);
 
     @FXML
-    private static ImageView PawnB3;
+    private static ImageView PawnB3 = new ImageView();
     static Pawn pawnB3 = new Pawn(2, 6, false, PawnB3);
 
     @FXML
-    private static ImageView PawnB4;
+    private static ImageView PawnB4 = new ImageView();
     static Pawn pawnB4 = new Pawn(3, 6, false, PawnB4);
 
     @FXML
-    private static ImageView PawnB5;
+    private static ImageView PawnB5 = new ImageView();
     static Pawn pawnB5 = new Pawn(4, 6, false, PawnB5);
 
     @FXML
-    private static ImageView PawnB6;
+    private static ImageView PawnB6 = new ImageView();
     static Pawn pawnB6 = new Pawn(5, 6, false, PawnB6);
 
     @FXML
-    private static ImageView PawnB7;
+    private static ImageView PawnB7 = new ImageView();
     static Pawn pawnB7 = new Pawn(6, 6, false, PawnB7);
 
     @FXML
-    private static ImageView PawnB8;
+    private static ImageView PawnB8 = new ImageView();
     static Pawn pawnB8 = new Pawn(7, 6, false, PawnB8);
 
     @FXML
-    private static ImageView PawnW1;
+    private static ImageView PawnW1 = new ImageView();
     static Pawn pawnW1 = new Pawn(0, 1, true, PawnW1);
 
     @FXML
-    private static ImageView PawnW2;
+    private static ImageView PawnW2 = new ImageView();
     static Pawn pawnW2 = new Pawn(1, 1, true, PawnW2);
 
     @FXML
-    private static ImageView PawnW3;
+    private static ImageView PawnW3 = new ImageView();
     static Pawn pawnW3 = new Pawn(2, 1, true, PawnW3);
 
     @FXML
-    private static ImageView PawnW4;
+    private static ImageView PawnW4 = new ImageView();
     static Pawn pawnW4 = new Pawn(3, 1, true, PawnW4);
 
     @FXML
-    private static ImageView PawnW5;
+    private static ImageView PawnW5 = new ImageView();
     static Pawn pawnW5 = new Pawn(4, 1, true, PawnW5);
 
     @FXML
-    private static ImageView PawnW6;
+    private static ImageView PawnW6 = new ImageView();
     static Pawn pawnW6 = new Pawn(5, 1, true, PawnW6);
 
     @FXML
-    private static ImageView PawnW7;
+    private static ImageView PawnW7 = new ImageView();
     static Pawn pawnW7 = new Pawn(6, 1, true, PawnW7);
 
     @FXML
-    private static ImageView PawnW8;
+    private static ImageView PawnW8 = new ImageView();
     static Pawn pawnW8 = new Pawn(7, 1, true, PawnW8);
 
     @FXML
-    private static ImageView QueenB;
+    private static ImageView QueenB = new ImageView();
     static Queen queenB = new Queen(3, 7, false, QueenB);
 
     @FXML
-    static private ImageView QueenW;
+    static private ImageView QueenW = new ImageView();
     static Queen queenW = new Queen(3, 0, true, QueenW);
 
     @FXML
-    private static ImageView RookB1;
+    private static ImageView RookB1 = new ImageView();
     static Rook rookB1 = new Rook(0, 7, false, RookB1);
 
     @FXML
-    private static ImageView RookB2;
+    private static ImageView RookB2 = new ImageView();
     static Rook rookB2 = new Rook(7, 7, false, RookB2);
 
     @FXML
-    private static ImageView RookW1;
+    private static ImageView RookW1 = new ImageView();
     static Rook rookW1 = new Rook(0, 0, true, RookW1);
 
     @FXML
-    private static ImageView RookW2;
+    private static ImageView RookW2 = new ImageView();
     static Rook rookW2 = new Rook(7, 0, true, RookW2);
 
     @FXML
-    private static Button a1;
+    private static Button a1 = new Button();
     static Tile A1 = new Tile(0, 0, a1);
 
     @FXML
-    private static Button a2;
+    private static Button a2 = new Button();
     static Tile A2 = new Tile(0, 1, a2);
 
     @FXML
-    private static Button a3;
+    private static Button a3 = new Button();
     static Tile A3 = new Tile(0, 2, a3);
 
     @FXML
-    private static Button a4;
+    private static Button a4 = new Button();
     static Tile A4 = new Tile(0, 3, a4);
 
     @FXML
-    private static Button a5;
+    private static Button a5 = new Button();
     static Tile A5 = new Tile(0, 4, a5);
 
     @FXML
-    private static Button a6;
+    private static Button a6 = new Button();
     static Tile A6 = new Tile(0, 5, a6);
 
     @FXML
-    private static Button a7;
+    private static Button a7 = new Button();
     static Tile A7 = new Tile(0, 6, a7);
 
     @FXML
-    private static Button a8;
+    private static Button a8 = new Button();
     static Tile A8 = new Tile(0, 7, a8);
 
     @FXML
-    private static Button b1;
+    private static Button b1 = new Button();
     static Tile B1 = new Tile(1, 0, b1);
 
     @FXML
-    private static Button b2;
+    private static Button b2 = new Button();
     static Tile B2 = new Tile(1, 1, b2);
 
     @FXML
-    private static Button b3;
+    private static Button b3 = new Button();
     static Tile B3 = new Tile(1, 2, b3);
 
     @FXML
-    private static Button b4;
+    private static Button b4 = new Button();
     static Tile B4 = new Tile(1, 3, b4);
 
     @FXML
-    private static Button b5;
+    private static Button b5 = new Button();
     static Tile B5 = new Tile(1, 4, b5);
 
     @FXML
-    private static Button b6;
+    private static Button b6 = new Button();
     static Tile B6 = new Tile(1, 5, b6);
 
     @FXML
-    private static Button b7;
+    private static Button b7 = new Button();
     static Tile B7 = new Tile(1, 6, b7);
 
     @FXML
-    private static Button b8;
+    private static Button b8 = new Button();
     static Tile B8 = new Tile(1, 7, b8);
 
     @FXML
-    private static Button c1;
+    private static Button c1 = new Button();
     static Tile C1 = new Tile(2, 0, c1);
 
     @FXML
-    private static Button c2;
+    private static Button c2 = new Button();
     static Tile C2 = new Tile(2, 1, c2);
 
     @FXML
-    private static Button c3;
+    private static Button c3 = new Button();
     static Tile C3 = new Tile(2, 2, c3);
 
     @FXML
-    private static Button c4;
+    private static Button c4 = new Button();
     static Tile C4 = new Tile(2, 3, c4);
 
     @FXML
-    private static Button c5;
+    private static Button c5 = new Button();
     static Tile C5 = new Tile(2, 4, c5);
 
     @FXML
-    private static Button c6;
+    private static Button c6 = new Button();
     static Tile C6 = new Tile(2, 5, c6);
 
     @FXML
-    private static Button c7;
+    private static Button c7 = new Button();
     static Tile C7 = new Tile(2, 6, c7);
 
     @FXML
-    private static Button c8;
+    private static Button c8 = new Button();
     static Tile C8 = new Tile(2, 7, c8);
 
     @FXML
-    private static Button d1;
+    private static Button d1 = new Button();
     static Tile D1 = new Tile(3, 0, d1);
 
     @FXML
-    private static Button d2;
+    private static Button d2 = new Button();
     static Tile D2 = new Tile(3, 1, d2);
 
     @FXML
-    private static Button d3;
+    private static Button d3 = new Button();
     static Tile D3 = new Tile(3, 2, d3);
 
     @FXML
-    private static Button d4;
+    private static Button d4 = new Button();
     static Tile D4 = new Tile(3, 3, d4);
 
     @FXML
-    private static Button d5;
+    private static Button d5 = new Button();
     static Tile D5 = new Tile(3, 4, d5);
 
     @FXML
-    private static Button d6;
+    private static Button d6 = new Button();
     static Tile D6 = new Tile(3, 5, d6);
 
     @FXML
-    private static Button d7;
+    private static Button d7 = new Button();
     static Tile D7 = new Tile(3, 6, d7);
 
     @FXML
-    private static Button d8;
+    private static Button d8 = new Button();
     static Tile D8 = new Tile(3, 7, d8);
 
     @FXML
-    private static Button e1;
+    private static Button e1 = new Button();
     static Tile E1 = new Tile(4, 0, e1);
 
     @FXML
-    private static Button e2;
+    private static Button e2 = new Button();
     static Tile E2 = new Tile(4, 1, e2);
 
     @FXML
-    private static Button e3;
+    private static Button e3 = new Button();
     static Tile E3 = new Tile(4, 2, e3);
 
     @FXML
-    private static Button e4;
+    private static Button e4 = new Button();
     static Tile E4 = new Tile(4, 3, e4);
 
     @FXML
-    private static Button e5;
+    private static Button e5 = new Button();
     static Tile E5 = new Tile(4, 4, e5);
 
     @FXML
-    private static Button e6;
+    private static Button e6 = new Button();
     static Tile E6 = new Tile(4, 5, e6);
 
     @FXML
-    private static Button e7;
+    private static Button e7 = new Button();
     static Tile E7 = new Tile(4, 6, e7);
 
     @FXML
-    private static Button e8;
+    private static Button e8 = new Button();
     static Tile E8 = new Tile(4, 7, e8);
 
     @FXML
-    private static Button f1;
+    private static Button f1 = new Button();
     static Tile F1 = new Tile(5, 0, f1);
 
     @FXML
-    private static Button f2;
+    private static Button f2 = new Button();
     static Tile F2 = new Tile(5, 1, f2);
 
     @FXML
-    private static Button f3;
+    private static Button f3 = new Button();
     static Tile F3 = new Tile(5, 2, f3);
 
     @FXML
-    private static Button f4;
+    private static Button f4 = new Button();
     static Tile F4 = new Tile(5, 3, f4);
 
     @FXML
-    private static Button f5;
+    private static Button f5 = new Button();
     static Tile F5 = new Tile(5, 4, f5);
 
     @FXML
-    private static Button f6;
+    private static Button f6 = new Button();
     static Tile F6 = new Tile(5, 5, f6);
 
     @FXML
-    private static Button f7;
+    private static Button f7 = new Button();
     static Tile F7 = new Tile(5, 6, f7);
 
     @FXML
-    private static Button f8;
+    private static Button f8 = new Button();
     static Tile F8 = new Tile(5, 7, f8);
 
     @FXML
-    private static Button g1;
+    private static Button g1 = new Button();
     static Tile G1 = new Tile(6, 0, g1);
 
     @FXML
-    private static Button g2;
+    private static Button g2 = new Button();
     static Tile G2 = new Tile(6, 1, g2);
 
     @FXML
-    private static Button g3;
+    private static Button g3 = new Button();
     static Tile G3 = new Tile(6, 2, g3);
 
     @FXML
-    private static Button g4;
+    private static Button g4 = new Button();
     static Tile G4 = new Tile(6, 3, g4);
 
     @FXML
-    private static Button g5;
+    private static Button g5 = new Button();
     static Tile G5 = new Tile(6, 4, g5);
 
     @FXML
-    private static Button g6;
+    private static Button g6 = new Button();
     static Tile G6 = new Tile(6, 5, g6);
 
     @FXML
-    private static Button g7;
+    private static Button g7 = new Button();
     static Tile G7 = new Tile(6, 6, g7);
 
     @FXML
-    private static Button g8;
+    private static Button g8 = new Button();
     static Tile G8 = new Tile(6, 7, g8);
 
     @FXML
-    private static Button h1;
+    private static Button h1 = new Button();
     static Tile H1 = new Tile(7, 0, h1);
 
     @FXML
-    private static Button h2;
+    private static Button h2 = new Button();
     static Tile H2 = new Tile(7, 1, h2);
 
     @FXML
-    private static Button h3;
+    private static Button h3 = new Button();
     static Tile H3 = new Tile(7, 2, h3);
 
     @FXML
-    private static Button h4;
+    private static Button h4 = new Button();
     static Tile H4 = new Tile(7, 3, h4);
 
     @FXML
-    private static Button h5;
+    private static Button h5 = new Button();
     static Tile H5 = new Tile(7, 4, h5);
 
     @FXML
-    private static Button h6;
+    private static Button h6 = new Button();
     static Tile H6 = new Tile(7, 5, h6);
 
     @FXML
-    private static Button h7;
+    private static Button h7 = new Button();
     static Tile H7 = new Tile(7, 6, h7);
 
     @FXML
-    private static Button h8;
+    private static Button h8 = new Button();
     static Tile H8 = new Tile(7, 7, h8);
 
     @FXML
@@ -1083,7 +1083,5 @@ public class chessProjectBoard implements Initializable {
         assert h6 != null : "fx:id=\"h6\" was not injected: check your FXML file 'chessProjectBoard.fxml'.";
         assert h7 != null : "fx:id=\"h7\" was not injected: check your FXML file 'chessProjectBoard.fxml'.";
         assert h8 != null : "fx:id=\"h8\" was not injected: check your FXML file 'chessProjectBoard.fxml'.";
-
     }
-
 }

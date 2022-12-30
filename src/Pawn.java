@@ -7,6 +7,7 @@ public class Pawn extends Piece{
         super(xPosition, yPosition, color, button);
     }
 
+    @Override
     public boolean checkMove(Move playerMove){
         
         //checks Pawn.isWhite to see what direction the pawn can go in 

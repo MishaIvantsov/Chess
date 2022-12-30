@@ -14,6 +14,6 @@ public class Piece {
     }
 
     public boolean checkMove(Move playerMove){
-        return false;
+        return true;
     }
 }
